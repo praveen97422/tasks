@@ -1,0 +1,33 @@
+task=[0]
+while True:
+ print("1. Add Task")
+ print("2. Delete Task")
+ print("3. Complete Task")
+ print("4. view Task")
+ print("5. exit")
+ a=int(input("enter your option: "))
+
+ if a==1:
+  b=input("enter the task : ")
+  task.append(b)
+ elif a==2:
+  c=int(input("enter the task to remove :"))
+  task.pop(c)
+ elif a==3:
+  d=int(input("Enter the task number to mark as completed : "))
+  complete = " is completed" 
+  task[d]=[task[d] + complete]
+
+ elif a==4:
+ 
+  for tasks in task :
+   if tasks==0:
+     continue
+   print(tasks)
+ elif a==5:
+    break
+ else:
+  print("invalid")
+    
+  
+  
